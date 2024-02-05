@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Forms</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(32, 73, 178, 0.862);
+            color: white;
+            line-height: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        .form-wrap {
+            background-color: #fff;
+            color: #0a0909;
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+
+        .form-wrap h1, .form-wrap p {
+            text-align: center;
+        }
+
+        .form-wrap .form-group {
+            margin-top: 20px;
+        }
+
+        .form-wrap .form-group label {
+            display: block;
+            color: #666;
+        }
+
+        .form-wrap .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-wrap button {
+            width: 100%;
+            background-color: rgb(57, 176, 57);
+            display: block;
+            color: white;
+            margin-top: 20px;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .form-wrap button:hover {
+            background-color: rgba(57, 176, 57, 0.644);
+        }
+
+        footer a {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Block.
+        inline.
+        By using Css -You caan convert Block -> Inline
+                                       Inline -> Blok.
+    -->
+    <div class="container">
+        <div class="form-wrap">
+            <h1>Sign Up!</h1>
+            <p> It's free and only 1 min time</p>
+            <form action="some.php" method="post" name="">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div><div class="form-group">
+                    <label for="first-name">EMail:</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div><div class="form-group">
+                    <label for="first-name">Mobile Number:</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div><div class="form-group">
+                    <label for="first-name">Password:</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div>
+                <button class="btn">SignUp!</button>
+                <p class="buttom-text">By Clicking you agree our <a href="#">Terms and Conditions</a></p>
+            </form>
+        </div>
+        <footer>
+            <p> Already Register ? Please <a href="#">Login</a> here</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

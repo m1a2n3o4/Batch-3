@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Psudo Classes</title>
+    <style>
+        a {
+            color: #333;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .btn {
+            background-color: #ffa41c;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px 70px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f3eb0bd8;
+            color: black;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--
+        Psudo class (:) : Hover, active, visted.
+        CSS         : Customize anchor Tag.
+        CSS         : Customoze Button.
+    -->
+
+    <a class="btn" href="#"> click here</a> <br> <br> <br>
+
+    <button class="btn"> Add to cart</button>
+    <button class="btn"> Buy Now</button>
+
+</body>
+</html>

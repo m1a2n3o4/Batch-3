@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Forms</title>
+    <style>
+        form {
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Forms
+        Why we need : To collet the data and sending the data.
+        How to create : By using HTML Elemets.
+        List out the fileds :
+
+        Name:   Textbox.
+        email:  Textbox
+        password: Passsword
+        submit:  Button
+        phone number: Number
+        Address: Textarea
+        Nominy: Teaxtbox
+        account number: Number
+        DOB: date
+        PAN: TextBox
+        AAdhar number: NUmber
+        Signature: file
+        Upload file: file
+        Account Type (Cuttent/Saving); dropdown
+        Male/female: Radio Buttons
+        IFSC Code: Textbox
+        Parents Name: Textbox
+        Name of the bank: dropdown/text
+        Country: dropdown/text
+        Required or not:  radio button
+        Type (Single/join account:) radio button.
+
+        Method - Get : Compete form data will visble on URL- it will submit the data.
+        Method - Post: Form data will not visble on URL - IT will Submit data.
+
+        When we have any sensitive data in the form we will use POST - Pass, cardnumner, OTP
+
+        Questions on forms:
+         1) What is Action attribute for form
+         2) Diff between post and Get methods.
+         3) Diff between Input type Submit and Button.
+         4) Diff bewteen Radio and CheckBoc.
+         5) Wts the prpose of Name attribute in the input.
+
+         Form Input Attrubutes:
+           1) Required.
+           2) PlaceHolder.
+           3) Readonly.
+           4) Disabled
+          
+
+    -->
+    <form action="testpage.java" method="get">
+
+        
+        <input type="text" name="name" value="Manohar" id="uname" placeholder="aSFadsfad" required maxlength="10"/> <br>
+
+        <label for="password">Password:</label>
+        <input type="password" value="" name="paswd" id="paswd" required> <br>
+
+        <label for="cpassword">Conform Password</label>
+        <input type="password" value="" name="cpaswd" id="cpaswd" readonly> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" value="" name="email" id="email" required> <br>
+
+        <input type="color" value="" placeholder="poic your color"/>
+
+        <input type="date" value=""/>
+
+        <input type="file"/>
+        <input type="search" />
+
+        <input type="hidden" value="123"/>
+
+        <input type="submit" value="Submit"/>
+
+       
+    </form>
+</body>
+<!--  Key/name and Value combination - JavaScript JSON Data.
+    http://127.0.0.1:5500/Day%205/
+    getformdata.java?
+    abcd=manu123&
+    paswd=test123&
+    cpaswd=test123&
+    email=manumano111%40gmail.com
+
+
+    http://127.0.0.1:5500/Day%205/
+    getformdata.java?
+    paswd=test
+    &cpaswd=test
+    &email=manu%40gmail.com
+
+    http://127.0.0.1:5500/Day%205/
+    getformdata.java?
+    uname=manu123&
+    paswd=test&
+    cpaswd=test&
+    email=manumano111%40gmail.com&
+    male=male&
+    female=female&
+    other=other&
+    cricket=crick
+    &insta=insta
+
+    http://127.0.0.1:5500/Day%205/
+    getformdata.java?
+    uname=manu123&
+    paswd=test&
+    cpaswd=test&email=manumano111%40gmail.com&
+    gender=female&
+    hobbies=movie&
+    hobbies=insta
+
+    https://www.amazon.in/ap/signin
+-->
+</html>

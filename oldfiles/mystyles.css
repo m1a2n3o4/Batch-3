@@ -1,0 +1,19 @@
+.my-class {
+    border: 2px solid red ;
+    background-color: rgba(255, 0, 0, 0.314);
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-left: 550px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+body {
+    background-color: black;
+}

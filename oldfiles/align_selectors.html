@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and alignments</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .cointainer {
+           max-width: 800px;
+           margin: 60px auto;
+        }
+
+        .box {
+            background-color: rgb(215, 244, 250);
+            border: 1px solid gray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box p {
+            text-align: justify;
+        }
+
+        #box-2 {
+            width: 60%;
+            float: left;
+        }
+
+        #box-3 {
+            width: 40%;
+            float: right;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <!--
+        Alignements.
+        width and max-width.
+        width: 1260px.
+        ideal-widths : 960px.
+        Selectors :
+           1) Element selectors ( p, img, div, h1 ....).
+           2) Class selectors  (.box, .my-menu, .my-class).
+           3) ID selectors ( #mbox-1).
+           4) class + Element Selecotrs. ( .box-4 p).
+           5) Element + Class selectors.
+           6) Class + Element + Element Selectors (Nested Selectors).
+           7) Class + Class Selectors
+
+    -->
+    <div class="cointainer">
+        <div id="box-1" class="box">
+            <h2>Heading news 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi vero totam reprehenderit veniam consectetur, ad harum libero repellendus, quia mollitia, nihil commodi. Dolore culpa porro fuga quos alias totam temporibus.</p>
+        </div>
+    
+        <div id="box-2" class="box">
+            <h2>Heading news 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit odit exercitationem molestias illo tempore nobis, eius mollitia delectus ipsam earum voluptatem consequatur laudantium possimus consectetur vitae incidunt voluptas numquam minus.</p>
+        </div>
+    
+        <div id="box-3" class="box">
+            <h2> Heading News 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis qui aliquid, voluptatum at vel praesentium! Accusamus libero earum voluptatum nulla id? Corrupti impedit quod vel rem recusandae necessitatibus cum porro.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

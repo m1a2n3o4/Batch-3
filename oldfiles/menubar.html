@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Menu Bar (Side bar and Main Menu Bar)</title>
+    <style>
+        .side-bar {
+            list-style: none;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 30px;
+        }
+
+        .side-bar li {
+            font-size: 20px;
+            line-height: 40px;
+            border-bottom: 1px dotted gray;
+        }
+
+        .side-bar li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .side-bar li a:hover {
+            color: red;
+        }
+
+        /* Navigation menu */
+
+        .nav-bar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(33, 33, 182);
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .nav-bar li {
+            float: left;
+            
+        }
+
+        .nav-bar li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .nav-bar li a:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Menu bar with 
+    -->
+    <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">contact US</a></li>
+    </ul>
+    <ul class="side-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">contact US</a></li>
+    </ul>
+</body>
+</html>

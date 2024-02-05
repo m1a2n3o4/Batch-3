@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: rgb(231, 177, 106);
+            height: 100px;
+            width: 100%;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+        .footer {
+            background-color: rgb(231, 177, 106);
+            height: 100px;
+            width: 100%;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .body {
+            background-color: rgb(66, 126, 178);
+            height: 500px;
+        }
+
+        .body-left {
+            float: left;
+            height: 500px;
+            width: 30%;
+            border: 2px solid rgb(180, 202, 146);
+        }
+
+        .body-right {
+            float: left;
+            height: 500px;
+            width: 70%;
+           
+        }
+
+        @media ( max-width : 500px) {
+            .header {
+                background-color: rgb(172, 16, 8);
+            }
+
+            .footer {
+                background-color: rgb(172, 16, 8);
+            }
+
+            .body {
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        1) Header.
+        2) Body.
+        3) Footer.
+        --- Responsive Website -- CSS bottstrap. 
+        --- Media Quires
+        -- When my browser width reaches like 500px - want to chage layout/color/.. of the page!
+           -- Media Quires.
+    --> 
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to my website</h1>
+        </div>
+        <div class="body">
+            <div class="body-left">left</div>
+            <div class="body-right">
+                <div class="right-left">equal</div>
+                <div class="right-right">equal</div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

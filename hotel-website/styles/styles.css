@@ -1,0 +1,169 @@
+/* Reset all alignments */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Styles/ Common CSS */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Nav Bar Styles */
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    padding: 25px;
+    text-align: center;
+    display: block;
+}
+
+#navbar ul li a:hover, #navbar ul li a.active {
+    background-color: #444;
+    color: rgb(248, 98, 98);
+}
+
+/* For Show-case */
+
+#showcase {
+    background: url('../images/hotel-1.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+#showcase .showcase-content {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 40px;
+
+}
+
+.text-primary {
+    color: rgb(248, 98, 98);
+}
+
+.lead {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background: #333;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color:  rgb(248, 98, 98);
+    color: #333;
+}
+
+/* History info */
+
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    background: url('../images/persion-1.avif') no-repeat center;
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.bg-dark {
+    background-color: #444;
+    color: white;
+}
+
+#home-info .info-content p {
+    padding-top: 50px;
+}
+
+/* Feactures */
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 15px;
+    text-align: center;
+}
+
+.bg-orange {
+    background-color: rgb(248, 98, 98);
+    color: white;
+}
+
+/* Footer */
+#main-footer {
+    text-align: center;
+    background-color: rgb(151, 68, 35);
+    padding: 20px;
+    color: white;
+}
+
+.clr {
+    clear: both;
+}
+
